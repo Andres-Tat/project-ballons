@@ -6,11 +6,11 @@ $color-white: #ffffff
 
 $box-shadow: (0px 4px 4px 0px rgba(0, 0, 0, 0.3))
 
-@mixin style-link
+@mixin style-link($color)
     display: inline-block
     text-transform: uppercase
     text-decoration: none
-    color: $color-gray
+    color: $color
 
 *, ::after, ::before
     margin: 0
@@ -82,11 +82,10 @@ body
 
 .btn
     &:link,&:visited
-        @include style-link
+        @include style-link($color-gray)
         padding: 1.5rem 4rem
         background: $color-white
         border-radius: 5rem
-        display: inline-block
         transition: all .3s
         position: relative
         font-size: 2rem
