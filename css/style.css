@@ -155,4 +155,11 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+}
+
+.row {
+  max-width: 114rem;
+  background: #c0bae9;
+  margin: 0 auto;
+  margin-bottom: 8rem;
 }/*# sourceMappingURL=style.css.map */
